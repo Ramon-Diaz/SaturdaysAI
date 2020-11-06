@@ -160,6 +160,4 @@ class Preprocess():
 rootDir = 'Dataset/'
 clean_class = Preprocess(rootDir=rootDir, word_dict=class_words.class_words_dict)
 # %%
-clean_class.data_.get('soriana')
-# %%
 clean_class.df_
