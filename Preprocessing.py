@@ -29,7 +29,7 @@ class Preprocess():
         self.add_stop_words()
         self.spanish_stemmer_ = SnowballStemmer('spanish')
         self.preprocess('descripcion')
-        self.df_ = pd.DataFrame(columns=['Id','Tipo','Tipo_2','Tipo_3','Tipo_4','Marca','Submarca','Empaque','Contenido','UnidadMedida','LocalidadGeografica','Fuente','Precio','Fecha'])
+        self.df_ = pd.DataFrame(columns=['Id','Tipo','Tipo_2','Tipo_3','Tipo_4','Marca','Submarca','Empaque','Contenido','UnidadMedida','LocalidadGeografica','Fuente','precio','fecha'])
         self.categorize()
         self.append_df()
 
@@ -124,6 +124,9 @@ class Preprocess():
     def append_df(self):
         for element in self.data_.keys():
             self.df_ = self.df_.append(self.data_.get(element), ignore_index=True)
+        
+        self.df_.drop(['producto','descripcion'], axis=1, inplace=True)
+        
         return self
 
     def categorize(self):
@@ -161,3 +164,4 @@ rootDir = 'Dataset/'
 clean_class = Preprocess(rootDir=rootDir, word_dict=class_words.class_words_dict)
 # %%
 clean_class.df_
+# %%
