@@ -1,0 +1,118 @@
+,producto,descripcion,precio,fecha
+0,huevo,"['huev', 'blanc', 'precissim', '30']",59.9,10/30/2020
+1,huevo,"['huev', 'blanc', 'paq', '30', 'pz', 'san', 'juan']",54.5,10/30/2020
+2,huevo,"['huev', 'blanc', 'paq', '12', 'pz', 'san', 'juan']",24.5,10/30/2020
+3,huevo,"['huev', 'blanc', 'paq', '18', 'pz', 'san', 'juan']",35.5,10/30/2020
+4,huevo,"['huev', 'blanc', 'sorian', '12']",25.5,10/30/2020
+5,huevo,"['clar', 'huev', 'san', 'juan', '1', 'kg']",42.75,10/30/2020
+6,huevo,"['huev', 'blanc', 'sorian', '18']",39.9,10/30/2020
+7,huevo,"['clar', 'huev', 'san', 'juan', '500', 'g']",25.5,10/30/2020
+8,huevo,"['fide', 'oriental', 'huev', 'blu', 'dragon', '200', 'gram', 'bols']",53.75,10/30/2020
+9,huevo,"['huev', 'blanc', 'orespi', 'jumb', '20']",54.9,10/30/2020
+10,huevo,"['huev', 'blanc', 'orespi', 'libr', 'pastore', '12']",45.9,10/30/2020
+11,huevo,"['huev', 'codorniz', 'paq', '24', 'pz', 'san', 'andres']",70.25,10/30/2020
+12,huevo,"['huev', 'organ', 'paq', '12', 'pz']",68,10/30/2020
+13,huevo,"['huev', 'salsa/jamon', 'kg']",100,10/30/2020
+14,huevo,"['orespi', 'huev', 'blanc', 'net', '1080', 'gr', '18', 'pz', 'paq']",45.9,10/30/2020
+15,huevo,"['orespi', 'huev', 'blanc', 'net', '1650', 'gr', '30', 'pz', 'paq']",58.9,10/30/2020
+16,huevo,"['orespi', 'huev', 'blanc', 'net', '720', 'gr', '12', 'pz', 'paq']",28.9,10/30/2020
+17,huevo,"['past', 'cod', '2', 'lucchetti', 'huev', '200', 'gr']",6.3,10/30/2020
+18,huevo,"['past', 'fide', '2', 'lucchetti', 'huev', '200', 'gr']",6.3,10/30/2020
+19,huevo,"['past', 'sop', 'caneloni', 'huev', 'cj', '250']",102.9,10/30/2020
+20,huevo,"['past', 'spaguetti', 'lucchetti', 'huev', '200', 'gr']",6.2,10/30/2020
+21,frijol,"['frijol', 'pint', 'verd', 'vall', '900', 'gr']",50,10/30/2020
+22,frijol,"['frijol', 'may', 'cob', 'verd', 'vall', '900', 'gr']",50.75,10/30/2020
+23,frijol,"['frijolin', 'frijol', 'negr', '906', 'gr', 'bol']",27.5,10/30/2020
+24,frijol,"['frijol', 'negr', 'precissim', '908', 'g']",29.75,10/30/2020
+25,frijol,"['frijol', 'peruan', 'vall', 'verd', '400', 'gr']",17.9,10/30/2020
+26,frijol,"['frijol', 'refrit', 'negr', 'isador', '400', 'gr']",17.3,10/30/2020
+27,frijol,"['frijolin', 'frijol', 'peruan', 'mayocob', '906', 'gr', 'bol']",41.9,10/30/2020
+28,frijol,"['sorian', 'frijol', 'pint', '908', 'gr', 'bol']",42.9,10/30/2020
+29,frijol,"['frijol', 'negr', 'verd', 'vall', '900', 'gr']",37,10/30/2020
+30,frijol,"['frijol', 'ranch', 'style', '425', 'gr']",19.6,10/30/2020
+31,frijol,"['frijol', 'bay', 'costen', 'refrit', '310', 'gr']",10.1,10/30/2020
+32,frijol,"['frijol', 'refrit', 'bay', 'gras', 'isador', '430', 'gr']",19.7,10/30/2020
+33,frijol,"['carn', 'res', 'cerd', 'hormel', 'chili', 'frijol', '425', 'g']",52,10/30/2020
+34,frijol,"['frijol', 'pint', 'schettin', '900', 'gram', 'bols']",27.5,10/30/2020
+35,frijol,"['frijol', 'bay', 'costen', '580', 'gr']",15.5,10/30/2020
+36,frijol,"['frijol', 'enter', 'negr', 'isador', '454', 'gr']",17.85,10/30/2020
+37,frijol,"['frijol', 'negr', 'costen', 'enter', 'refrit', '430', 'gr']",13.45,10/30/2020
+38,frijol,"['frijol', 'negr', 'sierr', 'enter', '560', 'gr']",12.5,10/30/2020
+39,frijol,"['frijol', 'bay', 'costen', '400', 'gram', 'pouch']",14.8,10/30/2020
+40,frijol,"['frijol', 'bay', 'refrit', 'sierr', '440', 'gr']",13.75,10/30/2020
+41,frijol,"['frijol', 'chat', '430', 'gram', 'pouch']",15,10/30/2020
+42,frijol,"['frijol', 'choriz', 'pouch', 'sierr', '430', 'gr']",20,10/30/2020
+43,frijol,"['frijol', 'jarr', 'pint', 'amer', 'bol', '907', 'gr']",42.5,10/30/2020
+44,frijol,"['frijol', 'negr', 'costen', '400', 'gram', 'pouch']",14.8,10/30/2020
+45,leche,"['lech', 'evapor', 'carnation', '360', 'gr']",17.2,10/30/2020
+46,leche,"['lech', 'lal', 'enter', '1', 'l']",22.7,10/30/2020
+47,leche,"['lech', 'fresc', 'lal', '1.8', 'litr', 'bot']",34.9,10/30/2020
+48,leche,"['lech', 'lal', 'deslact', '1', 'l']",23,10/30/2020
+49,leche,"['lech', 'condens', 'lecher', '387', 'gr']",23.5,10/30/2020
+50,leche,"['lech', 'lal', 'deslact', 'light', '1', 'l']",23,10/30/2020
+51,leche,"['lech', 'ultra', 'lal', 'light', '1', 'lt']",22.7,10/30/2020
+52,leche,"['lech', 'alpur', 'deslact', '1', 'l']",22.5,10/30/2020
+53,leche,"['lech', 'lal', 'deslact', '1.5', 'ml']",33.2,10/30/2020
+54,leche,"['lech', 'evapor', 'carnation', '720', 'gr']",31.5,10/30/2020
+55,leche,"['lech', 'fresc', '100', 'red', 'gras', 'lal', '1', 'litr', 'bot']",27.5,10/30/2020
+56,leche,"['lech', 'alpur', 'clasic', 'enter', '1', 'l']",22.9,10/30/2020
+57,leche,"['lech', 'condens', 'lecher', '190', 'gr']",13.1,10/30/2020
+58,leche,"['lech', 'fresc', '100', 'semidesc', 'lal', '1', 'litr', 'bot']",27.5,10/30/2020
+59,leche,"['lech', 'lal', '100', 'lactos', 'light+protein', '1', 'l']",26.3,10/30/2020
+60,leche,"['lech', 'lal', 'enter', '1', 'lt']",21.75,10/30/2020
+61,leche,"['lecher', 'lech', 'sirv', 'facil', '355', 'gr', 'bot']",36.5,10/30/2020
+62,leche,"['lech', 'alpur', 'light', '1', 'l']",22.9,10/30/2020
+63,leche,"['lech', 'lal', 'deslact', 'light', '1.5', 'l']",33.6,10/30/2020
+64,leche,"['lech', 'lal', 'lactos', '+protein', '1', 'l']",26.3,10/30/2020
+65,leche,"['lech', 'ultra', 'deslact', 'nutrilech', '1', 'litr', 'natural', 'tetrabrick']",17.9,10/30/2020
+66,leche,"['lech', 'ultra', 'sant', 'clar', 'enter', '1', 'lt']",23.2,10/30/2020
+67,leche,"['lech', 'alpur', 'semidescrem', '1', 'l']",22.9,10/30/2020
+68,leche,"['lech', 'alpur', 'deslact', 'light', '1', 'l']",22.5,10/30/2020
+69,tortilla,"['tortill', 'maiz', 'blanc', '1', 'kg']",11.5,10/30/2020
+70,tortilla,"['tortill', 'harin', '10']",15.5,10/30/2020
+71,tortilla,"['tortill', 'harin', 'crud', 'baldit', '50']",52.5,10/30/2020
+72,tortilla,"['tortill', 'maiz', 'amarill', '1', 'kg']",12.5,10/30/2020
+73,tortilla,"['tio', 'bald', 'tortill', 'harin', 'integral', '500', 'gr', 'bol']",31.5,10/30/2020
+74,tortilla,"['tio', 'bald', 'tortill', 'hariin', 'normal', '500', 'gr']",31.5,10/30/2020
+75,tortilla,"['harin', 'tortill', 'select', '1', 'kg']",22,10/30/2020
+76,tortilla,"['tortill', 'harin', 'tia', 'ros', '12']",15.35,10/30/2020
+77,tortilla,"['tortill', 'harin', 'tia', 'ros', '22']",25.25,10/30/2020
+78,tortilla,"['tir', 'sop', 'tortill', 'bols', 'f/m']",21,10/30/2020
+79,tortilla,"['tortill', 'maiz', 'azul', '1', 'kg']",15,10/30/2020
+80,tortilla,"['tortill', 'nopal', 'chia-ajon', 'natural', '400']",35.25,10/30/2020
+81,tortilla,"['tortill', 'tac', 'v.a', '12', 'hs', '1', 'kg']",15,10/30/2020
+82,tortilla,"['1/4', 'poll', 'tortill']",45,10/30/2020
+83,tortilla,"['cald', 'sop', 'tortill', 'campbells', '300', 'gr', 'lat']",18.8,10/30/2020
+84,tortilla,"['marroquin', 'tortill', 'harin', '550', 'gr', 'pz']",26.7,10/30/2020
+85,tortilla,"['marroquin', 'tortill', 'harin', 'integral', '550', 'gr', 'pz']",26.7,10/30/2020
+86,tortilla,"['marroquin', 'tortill', 'harin', 'taquer', '1', 'kg', 'pz']",46.9,10/30/2020
+87,tortilla,"['medi', 'poll', 'rostiz', 'tortill']",60,10/30/2020
+88,tortilla,"['tac', 'barbacoa-carnitas/tortill', 'chic']",16,10/30/2020
+89,tortilla,"['tortill', 'harin', 'crud', 'villareal', '500', 'gr']",27.9,10/30/2020
+90,tortilla,"['tortill', 'harin', 'tia', 'ros', '255', 'gram']",13.5,10/30/2020
+91,tortilla,"['tortill', 'maiz', 'nopal', 'mision']",25,10/30/2020
+92,tortilla,"['tortill', 'maiz', 'enchil', 'tortiregi', 't']",22.5,10/30/2020
+93,papel higiénico,"['papel', 'higien', 'petal', 'ultra', 'jumb', '16', 'roll']",60.5,10/30/2020
+94,papel higiénico,"['papel', 'higien', 'petal', 'rendimax', 'manzanill', '12', 'roll']",78,10/30/2020
+95,papel higiénico,"['papel', 'higien', 'suavel', '32', 'roll']",109,10/30/2020
+96,papel higiénico,"['papel', 'alumini', 'reynolds', '1', 'pza', '7.6', 'm', 'x', '30', 'cm']",45.5,10/30/2020
+97,papel higiénico,"['papel', 'alumini', 'precissim', '1', 'pza', '7', 'm', 'x', '30', 'cm']",15.2,10/30/2020
+98,papel higiénico,"['papel', 'higien', 'regi', 'luxury', '4', 'roll']",22,10/30/2020
+99,papel higiénico,"['papel', 'higien', 'cottonell', '32', 'roll']",233,10/30/2020
+100,papel higiénico,"['papel', 'higien', 'regi', 'rind', 'mas', '12', 'roll']",68,10/30/2020
+101,papel higiénico,"['papel', 'higien', 'petal', 'ultra', 'jumb', '6', 'roll', '234', 'hoj']",24.9,10/30/2020
+102,papel higiénico,"['papel', 'higien', '285', 'hj', 'precissim', '4', 'roll']",20,10/30/2020
+103,papel higiénico,"['papel', 'higien', 'elit', 'duo', '4', 'roll', '341', 'hoj', 'dobl']",31,10/30/2020
+104,papel higiénico,"['papel', 'higien', 'premi', '6', 'roll']",28.5,10/30/2020
+105,papel higiénico,"['papel', 'alumini', 'precissim', '1', 'pza', '7.6', 'm', 'x', '30', 'cm']",29,10/30/2020
+106,papel higiénico,"['papel', 'alumini', 'reynolds', '15.2mx30cm']",79,10/30/2020
+107,papel higiénico,"['papel', 'encer', 'reynolds', '1', 'pza', '10', 'm', 'x', '30', 'cm']",42,10/30/2020
+108,papel higiénico,"['papel', 'higien', 'petal', 'ultra', 'car', '32', 'roll']",168,10/30/2020
+109,papel higiénico,"['papel', 'higien', 'regi', 'air', 'frescur', '32', 'roll']",121,10/30/2020
+110,papel higiénico,"['papel', 'higien', 'suavel', '12', 'roll']",45,10/30/2020
+111,papel higiénico,"['papel', 'alumini', 'reynolds', '7.6mx45cm']",81.5,10/30/2020
+112,papel higiénico,"['papel', 'hig', 'soft', 'max', 'elit', '12', 'roll']",85,10/30/2020
+113,papel higiénico,"['papel', 'higien', 'cottonell', 'beauty', '18', 'roll', '192', 'hoj']",141,10/30/2020
+114,papel higiénico,"['papel', 'higien', 'cottonell', 'beauty', '4', 'roll', '192', 'hoj']",33.5,10/30/2020
+115,papel higiénico,"['papel', 'higien', 'cottonell', 'pur', '4', 'roll', '180', 'hoj']",32,10/30/2020
+116,papel higiénico,"['papel', 'higien', 'elit', 'duo', '12', 'roll']",79.5,10/30/2020
