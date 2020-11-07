@@ -164,5 +164,8 @@ class Preprocess():
 rootDir = 'Dataset/'
 clean_class = Preprocess(rootDir=rootDir, word_dict=class_words.class_words_dict)
 # %%
-clean_class.df_.loc[0:10]
+clean_class.df_
 # %%
+clean_class.df_.to_csv('clean_data.csv', index=False)
+# %%
+# Imputar lo que falta con conocimiento general de cada producto.
