@@ -23,13 +23,14 @@ class Preprocess():
     def __init__(self, rootDir, word_dict):
         self.rootDir_ = rootDir
         self.class_words_dict_ = word_dict
-        self.data_ = self.import_data()
+        self.spanish_stemmer_ = SnowballStemmer('spanish')
         self.special_words_ = ['piez']
         self.stopwords_spanish_ = stopwords.words('spanish')
-        self.add_stop_words()
-        self.spanish_stemmer_ = SnowballStemmer('spanish')
-        self.preprocess('descripcion')
         self.df_ = pd.DataFrame(columns=['Id','Tipo','Tipo_2','Tipo_3','Tipo_4','Marca','Submarca','Empaque','Contenido','UnidadMedida','LocalidadGeografica','Fuente','precio','fecha'])
+
+        self.data_ = self.import_data()
+        self.add_stop_words()
+        self.preprocess('descripcion')
         self.categorize()
         self.append_df()
 
@@ -163,5 +164,5 @@ class Preprocess():
 rootDir = 'Dataset/'
 clean_class = Preprocess(rootDir=rootDir, word_dict=class_words.class_words_dict)
 # %%
-clean_class.df_
+clean_class.df_.loc[0:10]
 # %%
