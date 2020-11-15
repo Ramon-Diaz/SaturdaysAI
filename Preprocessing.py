@@ -12,11 +12,13 @@ import glob
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
+#from sklearn.impute import KNNImputer
+from sklearn.preprocessing import OrdinalEncoder
 import string
 import unidecode
 import re
-
-import class_words
+from fancyimpute import KNN
+import class_words_all
 import complete_stem_words
 
 # %%
@@ -26,6 +28,8 @@ class Preprocess():
         self.rootDir_ = rootDir
         self.class_words_dict_ = word_dict
         self.inv_words_dict_ = inv_words
+        self.imputer_ = KNN(k=1)
+        self.enc_ = OrdinalEncoder()
         self.spanish_stemmer_ = SnowballStemmer('spanish')
         self.special_words_ = ['piez']
         self.stopwords_spanish_ = stopwords.words('spanish')
@@ -39,6 +43,7 @@ class Preprocess():
         self.join_marca_submarca_drop_null()
         self.imputation()
         self.inv_words_funct()
+        self.drop_unused_columns()
 
     def import_data(self):
         '''
@@ -131,9 +136,7 @@ class Preprocess():
     def append_df(self):
         for element in self.data_.keys():
             self.df_ = self.df_.append(self.data_.get(element), ignore_index=True)
-        
-        self.df_.drop(['producto','descripcion','LocalidadGeografica'], axis=1, inplace=True)
-        
+                
         return self
 
     def categorize(self):
@@ -167,7 +170,8 @@ class Preprocess():
         return self
     
     def join_marca_submarca_drop_null(self):
-        self.df_['Marca'] = self.df_['Marca'] + '_' + self.df_['Submarca']
+        self.df_['Submarca'].fillna('',inplace=True)
+        self.df_['Marca'] = self.df_['Marca'] + self.df_['Submarca']
         self.df_.drop(['Submarca'],axis=1,inplace=True)
         self.df_.dropna(subset=['Tipo'], inplace=True)
         
@@ -183,6 +187,8 @@ class Preprocess():
                 self.df_['UnidadMedida'].loc[row] = 'pz'
             if self.df_.Tipo.loc[row] == 'papel' and self.df_.UnidadMedida.loc[row] == '':
                 self.df_['UnidadMedida'].loc[row] = 'roll'
+            if self.df_.Tipo.loc[row] == 'lech' and self.df_.UnidadMedida.loc[row] == '':
+                self.df_['UnidadMedida'].loc[row] = 'l'
             if self.df_.Contenido.loc[row] == '':
                 self.df_['Contenido'].loc[row] = '1'
             if self.df_.Marca.loc[row] == '':
@@ -209,6 +215,37 @@ class Preprocess():
                             self.df_['Tipo_2'].loc[row] = self.df_['Tipo_2'].loc[row] + '_' + self.df_['Tipo_4'].loc[row]
                         else:
                             self.df_['Tipo_2'].loc[row] = self.df_['Tipo_2'].loc[row] + '_' + self.df_['Tipo_3'].loc[row] + '_' + self.df_['Tipo_4'].loc[row]
+        self.knn_imputer_for_empaque()
+
+        return self
+    def knn_imputer_for_empaque(self):
+        data = self.df_.copy(deep=True)
+        data['Empaque'][(data['Empaque']=='')] = np.nan
+        # initialize variables
+        ordinal_enc_dict = {}
+        columns_to_encode = ['Tipo','Tipo_2','Empaque']
+        # loop over columns to encode
+        for col_name in data[columns_to_encode]:
+            # create ordinal encoder for the column
+            ordinal_enc_dict[col_name] = OrdinalEncoder()
+            # select the non-null values in the column
+            col = data[col_name]
+            col_not_null = col[col.notnull()]
+            reshaped_vals = col_not_null.values.reshape(-1,1)
+            # encode the non-null values of the column
+            encoded_vals = ordinal_enc_dict[col_name].fit_transform(reshaped_vals)
+            # store the values to non-null values of the column in data
+            data.loc[col.notnull(), col_name] = np.squeeze(encoded_vals)
+        # imputing with KNN
+        data.iloc[:,[data.columns.get_loc(col_) for col_ in columns_to_encode]] = np.round(self.imputer_.fit_transform(data[columns_to_encode]))
+        for col_name in data[columns_to_encode]:
+            # reshape the data
+            reshaped = data[col_name].values.reshape(-1,1)
+            # perform inverse transformation of the ordinally encoded columns
+            data[col_name] = ordinal_enc_dict[col_name].inverse_transform(reshaped)
+        
+        self.df_ = data.copy(deep=True)
+       
         return self
 
     def search_in_dict(self, data):
@@ -225,10 +262,15 @@ class Preprocess():
         for element in column_name:
             self.df_[element] = self.df_.apply(lambda row: self.search_in_dict(row[element]), axis=1)
         return self
+    
+    def drop_unused_columns(self):
+        columns_to_drop = ['descripcion','producto','LocalidadGeografica','Tipo_3','Tipo_4']
+        self.df_.drop(columns_to_drop, axis=1, inplace=True)
 
+        return self
 # %% 
 rootDir = 'Dataset/'
-clean_class = Preprocess(rootDir=rootDir, word_dict=class_words.class_words_dict, inv_words=complete_stem_words.inv_class_words)
+clean_class = Preprocess(rootDir=rootDir, word_dict=class_words_all.class_words_dict, inv_words=complete_stem_words.inv_class_words)
 # %%
 clean_class.df_
 # %%
