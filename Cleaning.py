@@ -275,5 +275,3 @@ clean_class = Preprocess(rootDir=rootDir, word_dict=class_words_all.class_words_
 clean_class.df_
 # %%
 clean_class.df_.to_csv('clean_data.csv', index=False)
-# %%
-clean_class.df_['Tipo_2'].unique()

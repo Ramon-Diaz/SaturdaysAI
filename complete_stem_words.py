@@ -106,7 +106,7 @@ inv_class_words = {
         'manzanilla_rendimax':  ['manzanill_rendimax'],
         'AiresDeCampo':     ['aircamp','air'],
         'bote':             ['bot'],
-        'lat':              ['lata'],
+        'lata':              ['lat'],
         'Selecta':          ['select'],
 
 

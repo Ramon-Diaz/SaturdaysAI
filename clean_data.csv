@@ -79,10 +79,10 @@ tortilla,harina,TiaRosa,bote,12,pieza,soriana,15.35,2020-10-30
 tortilla,harina,TiaRosa,bote,22,pieza,soriana,25.25,2020-10-30
 tortilla,sopa,Tira,bolsa,1,pieza,soriana,21.0,2020-10-30
 tortilla,maiz_azul,no_especificado,bolsa,1,kilogramo,soriana,15.0,2020-10-30
-tortilla,chia-ajon_nopal,natural,lat,400,pieza,soriana,35.25,2020-10-30
+tortilla,chia-ajon_nopal,natural,lata,400,pieza,soriana,35.25,2020-10-30
 tortilla,taquera,no_especificado,bolsa,1,kilogramo,soriana,15.0,2020-10-30
-tortilla,con_pollo,no_especificado,lat,0.25,pieza,soriana,45.0,2020-10-30
-tortilla,caldo_sopa,Campbells,lat,300,gramo,soriana,18.8,2020-10-30
+tortilla,con_pollo,no_especificado,lata,0.25,pieza,soriana,45.0,2020-10-30
+tortilla,caldo_sopa,Campbells,lata,300,gramo,soriana,18.8,2020-10-30
 tortilla,harina,Marroquin,bote,550,pieza,soriana,26.7,2020-10-30
 tortilla,integral,Marroquin,bolsa,550,pieza,soriana,26.7,2020-10-30
 tortilla,harina,Marroquin,bote,1,pieza,soriana,46.9,2020-10-30
@@ -144,7 +144,7 @@ frijol,pinto,VerdeValle,bolsa,1,kilogramo,superama,52.0,2020-10-24
 frijol,refrit,LaCostena,bolsa,580,gramo,superama,15.6,2020-10-24
 frijol,refrit,Chata,bolsa,430,gramo,superama,13.9,2020-10-24
 frijol,enter@,LaCostena,bote,560,gramo,superama,15.6,2020-10-24
-frijol,refrit,LaSierra,lat,580,gramo,superama,15.5,2020-10-24
+frijol,refrit,LaSierra,lata,580,gramo,superama,15.5,2020-10-24
 frijol,refrit,LaCostena,bolsa,580,gramo,superama,15.8,2020-10-24
 frijol,enter@,LaCostena,bote,560,gramo,superama,15.6,2020-10-24
 frijol,frijol_queretar_premium,grancosech,bolsa,1,kilogramo,superama,36.0,2020-10-24
@@ -180,7 +180,7 @@ tortilla,tortillin_reduc_gras,TiaRosa,bolsa,12,pzas,superama,17.5,2020-10-24
 tortilla,estil_norten,TiaRosa,bote,10,pzas,superama,14.9,2020-10-24
 tortilla,nopal,nopali,paquete,500,gramo,superama,29.5,2020-10-24
 tortilla,maiz,ocho,bolsa,800,gramo,superama,18.0,2020-10-24
-tortilla,ceboll_special_clasic,no_especificado,lat,500,gramo,superama,118.0,2020-10-24
+tortilla,ceboll_special_clasic,no_especificado,lata,500,gramo,superama,118.0,2020-10-24
 tortilla,amarant_glut,rafit,bolsa,400,gramo,superama,39.9,2020-10-24
 tortilla,amarant_glut,rafit,bolsa,400,gramo,superama,39.9,2020-10-24
 tortilla,integral,mission,bolsa,10,pzas,superama,15.0,2020-10-24
@@ -188,7 +188,7 @@ tortilla,maiz,ocho,bolsa,450,gramo,superama,10.5,2020-10-24
 tortilla,maiz_nopal,susali,bolsa,500,gramo,superama,31.5,2020-10-24
 tortilla,maiz,ocho,bolsa,800,gramo,superama,19.5,2020-10-24
 tortilla,frit_sal,freshgourmet,bote,99,gramo,superama,41.0,2020-10-24
-tortilla,caser,mission,lat,10,pzas,superama,12.5,2020-10-24
+tortilla,caser,mission,lata,10,pzas,superama,12.5,2020-10-24
 tortilla,sabor_mantequill,mission,bote,10,pzas,superama,11.9,2020-10-24
 papel,higienico_soft,Cottonell,bolsa,32,pzas,superama,230.0,2020-10-24
 papel,higienico_hoja_doble,Cottonell,bolsa,18,rollo,superama,120.0,2020-10-24
